@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_weight="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_weight="0.1"
+            android:id="@+id/tv_title"
+            android:text="@string/about_btn"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/blackColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/light_grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/ad_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/banner_ad_unit_id"
+                />
+
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/tv_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutus"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:textAlignment="textStart"
+                android:padding="7dp"
+                android:textColor="@color/blackColor"
+                tools:ignore="RtlCompat" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/whiteColor"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="5dp"
+
+        >
+
+    </SeekBar>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_weight="0.5"
+            android:id="@+id/tv_rec_name"
+            android:textColor="@color/blackColor"
+            android:textAlignment="textStart"
+            android:text="Record1"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_weight="0.33"
+                android:src="@drawable/ic_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_weight="0.33"
+                android:src="@drawable/ic_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_del"
+                android:layout_weight="0.33"
+                android:src="@drawable/ic_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                >
+
+            </ImageView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:visibility="gone"
+        android:background="@color/lightblackcolor"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        >
+
+    </View>
+
+</LinearLayout>

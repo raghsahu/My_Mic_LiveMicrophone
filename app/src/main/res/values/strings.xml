@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">My Mic</string>
+
+    <string name="home">Home</string>
+    <string name="MyMic">My Mic</string>
+    <string name="help">Help</string>
+    <string name="home_text">Connect with your Audience using \'My Mic\'</string>
+    <string name="about_btn">About \'MyMic\' App</string>
+    <string name="bt_btn">Connecting Bluetooth</string>
+    <string name="issue_btn">Issue and Suggestions</string>
+    <string name="conect_bt_btn">Connect Bluetooth</string>
+    <string name="rel_time_mic">Real-time Mic</string>
+    <string name="rec_btn">Record</string>
+    <string name="play_btn">Play</string>
+    <string name="re_record">Re-record</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2544542129747908/1332086095</string>
+    <string name="admob_app_id">ca-app-pub-2544542129747908~6775984460</string>
+
+    <string name="aboutus">‘My Mic’ Application is designed to use your Phone as
+mic and your Bluetooth device will play as <b>connected
+            speaker</b>. You don’t need to carry or search for
+additional ‘mic’ to address the audience ‘clearly.\n\n
+‘My Mic’ is apt even if you are looking to connect bigger
+        gathering in <b>office</b> or <b>outside</b>.\n\n
+‘My Mic’ Application also works when your music is on
+        your phone. Like if you are a <b>Gym instructor</b> and need
+to speak while music is on you can do it.\n\n
+You can explore its applications and share with us or
+larger community. You may try to connect multiple
+phone with different Bluetooth speakers in any party or
+gathering to give your audience a multi channel
+experience.</string>
+
+    <string name="connect_us">.</string>
+    <string name="connect_bt_text">Connect Bluetooth will take you to system setting to
+connect your phone with Bluetooth speaker.\n\n
+Your paired devices will be listed in this screen. Please
+select the Bluetooth Speaker of your choice and click. It
+will connect and will show as ‘connected’.\n\n
+Click on Back button which is on the top left corner of
+your screen to go back to application for further action.</string>
+
+
+</resources>
