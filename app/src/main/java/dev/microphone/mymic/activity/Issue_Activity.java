@@ -32,7 +32,7 @@ import static dev.microphone.mymic.activity.MainActivity.md5;
 public class Issue_Activity extends AppCompatActivity {
 
     ImageView iv_back;
-    private AdView mAdView;
+    private AdView mAdView,ad_view1;
     AdRequest adRequest;
     EditText et_subject, et_comments;
     Button btn_send;
@@ -63,8 +63,10 @@ public class Issue_Activity extends AppCompatActivity {
         });
 
         mAdView = (AdView) findViewById(R.id.ad_view);
+        ad_view1 = (AdView) findViewById(R.id.ad_view1);
         adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        ad_view1.loadAd(adRequest);
 
         mAdView = new AdView(this);
         mAdView.setAdSize(AdSize.SMART_BANNER);

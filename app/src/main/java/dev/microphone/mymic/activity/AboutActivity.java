@@ -20,10 +20,8 @@ import dev.microphone.mymic.R;
 
 
 public class AboutActivity extends AppCompatActivity {
-
     ImageView iv_back;
-
-    private AdView mAdView;
+    private AdView mAdView,ad_view1;
     AdRequest adRequest;
 
 
@@ -48,8 +46,10 @@ public class AboutActivity extends AppCompatActivity {
         });
 
         mAdView = (AdView)findViewById(R.id.ad_view);
+        ad_view1 = (AdView)findViewById(R.id.ad_view1);
         adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        ad_view1.loadAd(adRequest);
 
         mAdView = new AdView(this);
         mAdView.setAdSize(AdSize.SMART_BANNER);

@@ -14,8 +14,9 @@
     <string name="play_btn">Play</string>
     <string name="re_record">Re-record</string>
 
-    <string name="banner_ad_unit_id">ca-app-pub-2544542129747908/1332086095</string>
-    <string name="admob_app_id">ca-app-pub-2544542129747908~6775984460</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3863768784579254/7843307482</string>
+    <string name="rewarded_ad_unit_id">ca-app-pub-3863768784579254/3540567563</string>
+    <string name="admob_app_id">ca-app-pub-3863768784579254~6864433589</string>
 
     <string name="aboutus">‘My Mic’ Application is designed to use your Phone as
 mic and your Bluetooth device will play as <b>connected

@@ -51,6 +51,12 @@
 
     </View>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
     <ScrollView
         android:scrollbars="none"
         android:layout_width="match_parent"
@@ -95,5 +101,24 @@
 
     </ScrollView>
 
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/banner_ad_unit_id"
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
