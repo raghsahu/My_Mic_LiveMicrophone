@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.ads.AdListener;
@@ -31,6 +33,7 @@ import dev.microphone.mymic.activity.Issue_Activity;
 
 import static dev.microphone.mymic.activity.MainActivity.card_live;
 import static dev.microphone.mymic.activity.MainActivity.card_record;
+import static dev.microphone.mymic.activity.MainActivity.iv_help;
 import static dev.microphone.mymic.activity.MainActivity.ll_bottom;
 import static dev.microphone.mymic.activity.MainActivity.md5;
 import static dev.microphone.mymic.activity.MainActivity.toolbar;
@@ -53,6 +56,10 @@ public class HelpFragment extends Fragment {
         toolbar.setBackgroundColor(getResources().getColor(R.color.whiteColor));
         ll_bottom.setBackgroundColor(getResources().getColor(R.color.whiteColor));
         tv_title.setTextColor(getResources().getColor(R.color.blackColor));
+        DrawableCompat.setTint(
+                DrawableCompat.wrap(iv_help.getDrawable()),
+                ContextCompat.getColor(getActivity(), R.color.blackColor)
+        );
 
         card_live.setCardBackgroundColor(getResources().getColor(R.color.blackColor));
         card_record.setCardBackgroundColor(getResources().getColor(R.color.blackColor));

@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public static AppBarLayout toolbar;
     public static LinearLayout ll_bottom;
     public static TextView tv_title;
-    ImageView iv_help;
+    public static ImageView iv_help;
     public static TextView tv_live, tv_record;
 
     private AdView mAdView;

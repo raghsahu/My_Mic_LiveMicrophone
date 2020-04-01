@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
@@ -21,10 +23,12 @@ import dev.microphone.mymic.adapter.SliderAdapter;
 
 import static dev.microphone.mymic.activity.MainActivity.card_live;
 import static dev.microphone.mymic.activity.MainActivity.card_record;
+import static dev.microphone.mymic.activity.MainActivity.iv_help;
 import static dev.microphone.mymic.activity.MainActivity.ll_bottom;
 import static dev.microphone.mymic.activity.MainActivity.toolbar;
 import static dev.microphone.mymic.activity.MainActivity.tv_live;
 import static dev.microphone.mymic.activity.MainActivity.tv_record;
+import static dev.microphone.mymic.activity.MainActivity.tv_title;
 
 public class HomeFragment extends Fragment {
 
@@ -49,7 +53,11 @@ public class HomeFragment extends Fragment {
         card_record.setCardBackgroundColor(getResources().getColor(R.color.whiteColor));
         tv_live.setTextColor(getResources().getColor(R.color.blackColor));
         tv_record.setTextColor(getResources().getColor(R.color.blackColor));
-
+        tv_title.setTextColor(getResources().getColor(R.color.whiteColor));
+        DrawableCompat.setTint(
+                DrawableCompat.wrap(iv_help.getDrawable()),
+                ContextCompat.getColor(getActivity(), R.color.whiteColor)
+        );
         viewPager = root.findViewById(R.id.slider_pager);
         linearLayout = root.findViewById(R.id.linear_layout);
 

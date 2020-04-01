@@ -32,6 +32,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.fragment.app.Fragment;
 
 import java.io.File;
@@ -43,6 +44,7 @@ import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.content.ContentValues.TAG;
 import static dev.microphone.mymic.activity.MainActivity.card_live;
 import static dev.microphone.mymic.activity.MainActivity.card_record;
+import static dev.microphone.mymic.activity.MainActivity.iv_help;
 import static dev.microphone.mymic.activity.MainActivity.ll_bottom;
 import static dev.microphone.mymic.activity.MainActivity.toolbar;
 import static dev.microphone.mymic.activity.MainActivity.tv_live;
@@ -110,6 +112,10 @@ public class LiveFragment extends Fragment {
         toolbar.setBackgroundColor(getResources().getColor(R.color.whiteColor));
         ll_bottom.setBackgroundColor(getResources().getColor(R.color.whiteColor));
         tv_title.setTextColor(getResources().getColor(R.color.blackColor));
+        DrawableCompat.setTint(
+                DrawableCompat.wrap(iv_help.getDrawable()),
+                ContextCompat.getColor(getActivity(), R.color.blackColor)
+        );
 
         card_record.setCardBackgroundColor(getResources().getColor(R.color.whiteColor));
         card_live.setCardBackgroundColor(getResources().getColor(R.color.blackColor));
